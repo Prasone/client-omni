@@ -1,0 +1,190 @@
+*,
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+.background-image {
+    background: url(BG-Omni.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    padding-top: 3%;
+}
+
+.img {
+    width: 780px;
+    height: 360px;
+}
+
+.container {
+    margin-top: 1%;
+    border: 6px dashed green;
+    height: 40vh;
+    width: 40%;
+    padding-top: 2%;
+}
+
+.up {
+    clip-path: polygon(25% 25%, 75% 25%, 75% 75%, 50% 100%, 25% 75%);
+    height: 90px;
+    width: 100px;
+}
+
+.back {
+    clip-path: polygon(25% 25%, 50% 0%, 75% 25%, 75% 75%, 25% 75%);
+    height: 90px;
+    width: 100px
+}
+
+.left {
+    clip-path: polygon(25% 25%, 75% 25%, 100% 50%, 75% 75%, 25% 75%);
+    height: 100px;
+    width: 90px
+}
+
+.right {
+    clip-path: polygon(0% 50.25%, 25% 25%, 75% 25%, 75% 75%, 25% 75%);
+    height: 100px;
+    width: 90px
+}
+
+.refresh:hover{
+    color: #333333;
+}
+
+.col-2 {
+    margin-left: 40%;
+    margin-top: -15px;
+}
+
+
+button:hover {
+    box-shadow: 30%;
+    transform: scale(1.2)  ;
+    -webkit-transform: scale(1.2)  ;
+    -moz-transform: scale(1.2)  ;
+    -ms-transform: scale(1.2)  ;
+    -o-transform: scale(1.2)  ;
+}
+
+.col-1 {
+    margin-left: 40%;
+    margin-top: -4%;
+}
+
+
+.col-3 {
+
+    margin-top: -3%;
+    width: 20%;
+    margin-left: 10%;
+    padding-left: 17%;
+}
+
+/* .joystick {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 60%;
+    position: relative;
+    margin-left: 75%;
+    margin-top: -290px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+} */
+
+.stick {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s;
+}
+
+
+.stop,
+.refresh {
+    width: 20%;
+}
+
+footer {
+    height: 50px;
+    background-color: rgb(113, 113, 173);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.logo {
+    height: 50%;
+    width: 40px;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 312px) and (max-width: 575.98px) {
+    .container {
+        border: 4px dashed green;
+        height: 35VH;
+        width: 100%;
+    }
+
+    .img{
+        height: auto;
+        width: auto;
+    }
+
+    .stick {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .col-1,.col-2{
+        margin-left: 34%;
+        margin-top: 0%;
+    }
+
+    .col-3 {
+        width: 40%;
+        padding-top: 5%;
+        padding-left: 23%;
+        margin-left: 0%;
+        margin-right: -10%;
+    }
+  
+    .up,
+    .back {
+        height: 250%;
+        width: 70px;
+    }
+
+    .left,
+    .right {
+        height: 250%;
+        margin-left: 10%;
+        width: 60px;
+    }
+
+    .stop,
+    .refresh {
+        width: 40%;
+        margin-top: 10%;
+    }
+
+    .footer{
+        margin-top: 50%;
+        height: 9vh;
+    }
+}
+
