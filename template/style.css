@@ -84,19 +84,6 @@ button:hover {
     padding-left: 17%;
 }
 
-/* .joystick {
-    width: 150px;
-    height: 150px;
-    background-color: #ddd;
-    border-radius: 60%;
-    position: relative;
-    margin-left: 75%;
-    margin-top: -290px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
-} */
 
 .stick {
     width: 50px;
