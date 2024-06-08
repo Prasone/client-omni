@@ -121,6 +121,8 @@ footer {
 /* X-Small devices (portrait phones, less than 576px) */
 @media (min-width: 312px) and (max-width: 575.98px) {
     .container {
+        margin-top: 15%;
+        padding-top: 5%;
         border: 4px dashed green;
         height: 35VH;
         width: 100%;
@@ -170,7 +172,7 @@ footer {
     }
 
     .footer{
-        margin-top: 50%;
+        margin-top: 30%;
         height: 9vh;
     }
 }
